@@ -3,12 +3,10 @@
 Follow setup to bet the basic sfml project running on your computer
 
 ## Setup
-* mingw-w64 (windows only)
-    * [MinGW-w64 website](https://www.mingw-w64.org/). MingW-W64-builds under downloads is what is used.
-    * direct link to the installer [MinGW-w64 installer](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download)
-    * These are the options that are used
-    * ![MinGW-w64 Settings](https://i.imgur.com/i9bkmbu.png)
-    * **Make sure to add to path** [How to add to path](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/)
+* Install chocolaty
+    * [Chocolaty Download Page](https://chocolatey.org/install)
+
+* After chocolaty is installed, run ```choco install mingw``` in a new command prompt
 
 * Install CMake
     * [CMake Download Page](https://cmake.org/download/)
@@ -19,11 +17,10 @@ Follow setup to bet the basic sfml project running on your computer
 * in vscode terminal, run ```git submodule update --init --recursive```
 * in vscode, Run ```CMake: CMake Scan for Kits```
 * in vscode, Run ```CMake: Select a Kit```
-    * select ```GCC [version] i686-w64-mingw32``` (windows)
+    * select ```GCC [version] x86_64-w64-mingw32``` (windows)
     * select any gcc (linux)
 * in vscode, Run ```CMake: Delete Cache and Reconfigure```
     * This may take a bit, but you shouldn't have to run it again
 * press [f7]
 * in the vscode terminal you can now run the project by Running ```build\cmake_sfml.exe```
-    *you can also run as debu by pressing [ctrl] + [f5]
 
